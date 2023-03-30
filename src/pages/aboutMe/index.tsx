@@ -1,14 +1,16 @@
-import { Div, Sec, Sec2, SubTitle, Title } from "./styles";
+import { Box, Div, Header, Sec, Sec2, SubTitle, Title } from "./styles";
 import img from "../../public/static/img/logo/perfil.jpg";
 import { Project } from "@/components/Project";
 import { Projects } from "@/components/About-me-Projects";
 const AboutMe = () => {
   return (
-    <>
-      <Sec>
-        <header>
+    <Box>
+     <Header>
         <Title>Sobre mim</Title>
-        </header>
+        <button>HomePage</button>
+        </Header>
+      <Sec>
+       
         
         <Div>
         <img src= {img} alt="" />
@@ -17,7 +19,7 @@ const AboutMe = () => {
         
         <div>
         <p>
-          Minha introdução nesse mundo, assim como a de muitas pessoas, veio
+          Minha introdução no mundo da tecnologia, assim como a de muitas pessoas, veio
           através dos games os quais começaram a me fazer apreciar a tecnologia
           em si. Além disso, eu sempre me vi como uma pessoa prática o que me
           ajuda a me identificar com a tecnologia e com sua capacidade de
@@ -38,7 +40,7 @@ const AboutMe = () => {
       <Projects/>
       </Sec2>
       
-    </>
+    </Box>
   );
 };
 

@@ -11,6 +11,19 @@ display: flex;
 justify-content: center;
 gap: 20px;
 flex-wrap: wrap;
+margin-bottom: 20px;
+
+
+
+@media (max-width:480px) {
+width: 90%;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+gap: 20px;
+flex-wrap: wrap;
+}
 `
 
 export const Card = styled.div`
@@ -23,6 +36,19 @@ justify-content: space-between;
 border: solid black;
 background-color: var(--colors-brand1);
 border-radius: 10%;
+max-width: 700px;
+min-width: 350px;
+@media (max-width:480px) {
+  width: 100%;
+
+}
+
+@media (max-width:769px) {
+  width: 40%;
+
+}
+
+
 `
 
 export const Paragraph = styled.p`
