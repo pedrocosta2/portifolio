@@ -2,12 +2,14 @@ import { Box, Div, Header, Sec, Sec2, SubTitle, Title } from "./styles";
 import img from "../../public/static/img/logo/perfil.jpg";
 import { Project } from "@/components/Project";
 import { Projects } from "@/components/About-me-Projects";
+import { useNavigate } from "react-router-dom";
 const AboutMe = () => {
+  const navigate = useNavigate()
   return (
     <Box>
      <Header>
         <Title>Sobre mim</Title>
-        <button>HomePage</button>
+        <button onClick={() => navigate("/")}>HomePage</button>
         </Header>
       <Sec>
        

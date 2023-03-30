@@ -23,6 +23,7 @@ export const Header = styled.header`
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-bottom: 20px;
      button {
       background-color: white;
       color:var(--colors-brand1);
